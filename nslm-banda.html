@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NSLM Banda</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#d8c5a0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.portada{
+    width:100%;
+    min-height:100vh;
+    background:url("portada nslm la banda.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contenido{
+    width:90%;
+    max-width:1000px;
+    text-align:center;
+    background:rgba(0,0,0,0.70);
+    padding:40px;
+}
+
+h1{
+    margin-bottom:20px;
+    letter-spacing:3px;
+}
+
+.descripcion{
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.botonera{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.botonera a{
+    color:#d8c5a0;
+    text-decoration:none;
+    border:1px solid #6f5430;
+    padding:15px 30px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.botonera a:hover{
+    background:#6f5430;
+    color:#fff;
+}
+
+.seccion{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.seccion h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.video{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+}
+
+.video iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+
+@media(max-width:768px){
+
+    .contenido{
+        padding:25px;
+    }
+
+    .botonera{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="portada">
+
+    <div class="contenido">
+
+        <h1>NOS SOBRAN LOS MOTIVOS</h1>
+
+        <div class="descripcion">
+
+            NOS SOBRAN LOS MOTIVOS es un tributo a Joaquín Sabina integrado por músicos con más de 24 años de trayectoria artística.
+
+            <br><br>
+
+            A lo largo de nuestras carreras recorrimos giras nacionales, teatros, casinos, eventos empresariales, festivales y escenarios reconocidos como Paseo La Plaza, entre otros espacios culturales y comerciales.
+
+            <br><br>
+
+            NSLM nace para rendir homenaje a la obra de Joaquín Sabina desde el respeto, la calidad musical y la emoción de sus canciones.
+
+        </div>
+
+        <div class="botonera">
+
+            <a href="#video">▶ VER VIDEO</a>
+
+            <a href="#musicos">🎵 MÚSICOS</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="video" class="seccion">
+
+    <h2>VIDEO PRINCIPAL</h2>
+
+    <div class="video">
+
+        <iframe
+            src="https://www.youtube.com/embed/I8mYQusnFyc"
+            title="Nos Sobran Los Motivos"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+<section id="musicos" class="seccion">
+
+    <h2>MÚSICOS</h2>
+
+    <p>
+        Próximamente.
+    </p>
+
+</section>
+
+</body>
+</html>
