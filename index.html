@@ -3,40 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NSLM - Nos Sobran los Motivos</title>
+
+<title>NSLM - Nos Sobran Los Motivos</title>
 
 <style>
-html,
-body{
+
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+}
+
+body{
     background:#000;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .portada{
     width:100%;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#000;
+    display:block;
 }
 
 .portada img{
     width:100%;
-    height:100%;
-    object-fit:contain;
+    height:auto;
     display:block;
 }
-</style>
 
+.botonera{
+    width:100%;
+    background:#000;
+    border-top:1px solid #3a2a1c;
+    border-bottom:1px solid #3a2a1c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:25px;
+}
+
+.botonera a{
+    color:#d8c5a0;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:2px;
+    padding:12px 20px;
+    border:1px solid #6f5430;
+    transition:0.3s;
+}
+
+.botonera a:hover{
+    background:#6f5430;
+    color:#fff;
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="portada">
-    <img src="portada web.png" alt="Nos Sobran los Motivos">
+    <img src="portada web.png" alt="Nos Sobran Los Motivos">
 </div>
+
+<nav class="botonera">
+    <a href="#banda">NSLM BANDA</a>
+    <a href="#cartelera">CARTELERA</a>
+    <a href="#contrataciones">CONTRATACIONES</a>
+    <a href="#contacto">CONTACTO</a>
+</nav>
 
 </body>
 </html>
