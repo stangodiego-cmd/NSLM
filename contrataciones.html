@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contrataciones - NSLM</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,
+body{
+background:#000;
+font-family:Arial, Helvetica, sans-serif;
+color:#e6d1a4;
+}
+
+.portada{
+width:100%;
+height:75vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#000;
+}
+
+.portada img{
+max-width:100%;
+max-height:100%;
+object-fit:contain;
+display:block;
+}
+
+.contenido{
+max-width:1000px;
+margin:auto;
+padding:50px 30px;
+text-align:center;
+}
+
+.contenido h1{
+font-size:48px;
+letter-spacing:4px;
+margin-bottom:30px;
+color:#e6d1a4;
+}
+
+.contenido p{
+font-size:22px;
+line-height:1.8;
+margin-bottom:25px;
+color:#f1f1f1;
+}
+
+.formulario{
+max-width:800px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.formulario input,
+.formulario textarea{
+background:#111;
+border:1px solid #6f5430;
+padding:18px;
+font-size:18px;
+color:white;
+outline:none;
+}
+
+.formulario textarea{
+height:140px;
+resize:none;
+}
+
+.boton{
+background:#000;
+border:1px solid #6f5430;
+color:#e6d1a4;
+font-size:22px;
+font-weight:bold;
+letter-spacing:3px;
+padding:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+.boton:hover{
+background:#6f5430;
+color:white;
+}
+
+@media(max-width:768px){
+
+.portada{
+height:60vh;
+}
+
+.contenido h1{
+font-size:34px;
+}
+
+.contenido p{
+font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="portada">
+<img src="contrataciones.png" alt="Contrataciones NSLM">
+</section>
+
+<section class="contenido">
+
+<h1>CONTRATACIONES</h1>
+
+<p>
+Llevamos más de 24 años recorriendo escenarios de todo el país con un espectáculo profesional dedicado a la obra de Joaquín Sabina.
+</p>
+
+<p>
+NOS SOBRAN LOS MOTIVOS se presenta en eventos empresariales, teatros, festivales, espacios culturales, celebraciones privadas y eventos sociales, adaptando cada presentación a las características de cada ocasión.
+</p>
+
+<p>
+Para consultar disponibilidad y recibir un presupuesto personalizado, completá el formulario indicando la fecha del evento, el tipo de evento y la localidad donde se realizará.
+</p>
+
+<form class="formulario" onsubmit="enviarWhatsapp(); return false;">
+
+<input type="text" id="nombre" placeholder="Nombre y Apellido" required>
+
+<input type="tel" id="telefono" placeholder="Teléfono" required>
+
+<input type="text" id="fecha" placeholder="Fecha del evento" required>
+
+<input type="text" id="tipo" placeholder="Tipo de evento" required>
+
+<input type="text" id="localidad" placeholder="Localidad" required>
+
+<textarea id="mensaje" placeholder="Mensaje adicional"></textarea>
+
+<button class="boton" type="submit">
+SOLICITAR PRESUPUESTO
+</button>
+
+</form>
+
+</section>
+
+<script>
+
+function enviarWhatsapp(){
+
+let nombre=document.getElementById("nombre").value;
+let telefono=document.getElementById("telefono").value;
+let fecha=document.getElementById("fecha").value;
+let tipo=document.getElementById("tipo").value;
+let localidad=document.getElementById("localidad").value;
+let mensaje=document.getElementById("mensaje").value;
+
+let texto=
+`Hola, quiero solicitar presupuesto para una presentación de NOS SOBRAN LOS MOTIVOS.
+
+Nombre: ${nombre}
+
+Teléfono: ${telefono}
+
+Fecha del evento: ${fecha}
+
+Tipo de evento: ${tipo}
+
+Localidad: ${localidad}
+
+Mensaje adicional:
+${mensaje}`;
+
+let url="https://wa.me/5491132181527?text="+encodeURIComponent(texto);
+
+window.open(url,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>
