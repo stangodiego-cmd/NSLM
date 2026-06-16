@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacto - NSLM</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    background:#000;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#e6d1a4;
+}
+
+.portada{
+    width:100%;
+    height:75vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+}
+
+.portada img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+.contenido{
+    width:100%;
+    min-height:25vh;
+    background:#000;
+    border-top:1px solid #3a2a1c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:30px 20px;
+}
+
+.boton{
+    color:#d8c5a0;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:3px;
+    padding:18px 45px;
+    border:1px solid #6f5430;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background:#6f5430;
+    color:#fff;
+}
+
+@media(max-width:768px){
+    .portada{
+        height:65vh;
+    }
+
+    .contenido{
+        flex-direction:column;
+        gap:14px;
+    }
+
+    .boton{
+        width:90%;
+        text-align:center;
+        font-size:20px;
+        padding:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="portada">
+    <img src="contacto.png" alt="Contacto NSLM">
+</section>
+
+<section class="contenido">
+    <a class="boton" href="https://wa.me/5491132181527" target="_blank">WHATSAPP</a>
+    <a class="boton" href="https://instagram.com/nslm.tributo" target="_blank">INSTAGRAM</a>
+</section>
+
+</body>
+</html>
