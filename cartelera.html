@@ -6,106 +6,111 @@
 <title>Cartelera - NSLM</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html,
 body{
-    background:#000;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#e6d1a4;
+background:#000;
+font-family:Arial, Helvetica, sans-serif;
+color:#e6d1a4;
 }
 
 .contenedor{
-    max-width:1100px;
-    margin:auto;
-    padding:50px 20px;
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
 }
 
 h1{
-    text-align:center;
-    font-size:46px;
-    letter-spacing:5px;
-    margin-bottom:55px;
+text-align:center;
+font-size:48px;
+letter-spacing:5px;
+margin-bottom:60px;
 }
 
-.fecha{
-    text-align:center;
-    margin-bottom:70px;
-    border-bottom:1px solid #3a2a1c;
-    padding-bottom:60px;
+.evento{
+text-align:center;
+padding-bottom:70px;
+margin-bottom:70px;
+border-bottom:1px solid #3a2a1c;
 }
 
-.fecha h2{
-    font-size:30px;
-    letter-spacing:3px;
-    margin-bottom:10px;
+.evento h2{
+font-size:30px;
+letter-spacing:3px;
+margin-bottom:12px;
 }
 
-.fecha h3{
-    font-size:24px;
-    letter-spacing:2px;
-    margin-bottom:30px;
-    color:#fff;
+.evento h3{
+font-size:24px;
+color:#fff;
+letter-spacing:2px;
+margin-bottom:35px;
 }
 
-.fecha img{
-    width:100%;
-    max-width:650px;
-    display:block;
-    margin:0 auto 35px auto;
+.evento img{
+width:100%;
+max-width:700px;
+display:block;
+margin:auto;
+margin-bottom:35px;
 }
 
 .botones{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
 }
 
 .boton{
-    color:#d8c5a0;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-    letter-spacing:3px;
-    padding:16px 34px;
-    border:1px solid #6f5430;
-    transition:0.3s;
+display:inline-block;
+padding:18px 38px;
+border:1px solid #6f5430;
+color:#d8c5a0;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+letter-spacing:3px;
+transition:0.3s;
 }
 
 .boton:hover{
-    background:#6f5430;
-    color:#fff;
+background:#6f5430;
+color:#fff;
 }
 
 @media(max-width:768px){
-    h1{
-        font-size:34px;
-    }
 
-    .fecha h2{
-        font-size:24px;
-    }
-
-    .fecha h3{
-        font-size:20px;
-    }
-
-    .botones{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .boton{
-        width:90%;
-        text-align:center;
-        font-size:16px;
-    }
+h1{
+font-size:34px;
 }
+
+.evento h2{
+font-size:22px;
+}
+
+.evento h3{
+font-size:18px;
+}
+
+.botones{
+flex-direction:column;
+align-items:center;
+}
+
+.boton{
+width:90%;
+text-align:center;
+}
+
+}
+
 </style>
 </head>
 
@@ -115,28 +120,56 @@ h1{
 
 <h1>CARTELERA</h1>
 
-<section class="fecha">
-    <h2>SÁBADO 11 DE JULIO · 21:00 HS</h2>
-    <h3>BULZACK · LUJÁN</h3>
+<section class="evento">
 
-    <img src="bulzac fecha de julio.jpeg" alt="NSLM en Bulzack">
+<h2>SÁBADO 11 DE JULIO · 21:00 HS</h2>
 
-    <div class="botones">
-        <a class="boton" href="https://tickets.bulzack.com.ar/espectaculo/15/nos-sobran-los-motivos-homenaje-a-joaquin-sabina.html" target="_blank">COMPRAR ENTRADAS</a>
-        <a class="boton" href="https://www.instagram.com/cafe_bulzack?igsh=Nmg3ODh5dGIwdXZ0" target="_blank">CONOCÉ EL LUGAR</a>
-    </div>
+<h3>BULZACK · LUJÁN</h3>
+
+<img src="bulzac fecha de julio.jpeg" alt="NSLM Bulzack">
+
+<div class="botones">
+
+<a class="boton"
+href="https://tickets.bulzack.com.ar/espectaculo/15/nos-sobran-los-motivos-homenaje-a-joaquin-sabina.html"
+target="_blank">
+COMPRAR ENTRADAS
+</a>
+
+<a class="boton"
+href="https://www.instagram.com/cafe_bulzack?igsh=Nmg3ODh5dGIwdXZ0"
+target="_blank">
+CONOCÉ EL LUGAR
+</a>
+
+</div>
+
 </section>
 
-<section class="fecha">
-    <h2>JUEVES 23 DE JULIO · 21:00 HS</h2>
-    <h3>FIESTA SABINERA · BODEGA LAS LOMITAS</h3>
+<section class="evento">
 
-    <img src="flyer bodega 23 de julio.jpeg" alt="Fiesta Sabinera en Bodega Las Lomitas">
+<h2>JUEVES 23 DE JULIO · 21:00 HS</h2>
 
-    <div class="botones">
-        <a class="boton" href="https://youtube.com/shorts/jswJjVIpMvM" target="_blank">VER VIDEO DEL EVENTO</a>
-        <a class="boton" href="https://wa.me/5491132181527?text=Hola%2C%20quiero%20reservar%20una%20mesa%20para%20la%20Fiesta%20Sabinera%20en%20Bodega%20Las%20Lomitas." target="_blank">RESERVAR MESA</a>
-    </div>
+<h3>FIESTA SABINERA · BODEGA LAS LOMITAS</h3>
+
+<img src="flayer bodega 23 de julio.jpeg" alt="Fiesta Sabinera">
+
+<div class="botones">
+
+<a class="boton"
+href="https://youtube.com/shorts/jswJjVIpMvM"
+target="_blank">
+VER VIDEO DEL EVENTO
+</a>
+
+<a class="boton"
+href="https://wa.me/5491132181527?text=Hola,%20quiero%20reservar%20una%20mesa%20para%20la%20Fiesta%20Sabinera%20en%20Bodega%20Las%20Lomitas."
+target="_blank">
+RESERVAR MESA
+</a>
+
+</div>
+
 </section>
 
 </div>
